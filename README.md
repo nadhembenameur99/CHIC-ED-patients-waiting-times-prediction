@@ -32,18 +32,19 @@ on and to actually do something about it.
 
 Detailed administrative data on date and patient flow was provided by CHIC hospital:
 
-
 ### Data Modeling ###
 
 The ability to accurately and reliably predict waiting times at walk-in hospital facilities can increase both patient
 satisfaction and hospital efficiency via a better management of patient flow. This project implements machine learning (
-ML) models to predict waiting times in the Emergency Room (ER) of the intercommunal public hospital CHIC in Castres-Mazamet.
+ML) models to predict waiting times in the Emergency Room (ER) of the intercommunal public hospital CHIC in
+Castres-Mazamet.
 
 Several ML algorithms were evaluated to find the most accurate and useful prediction to a user. I
 chose [Random Forest](https://medium.com/@muneebhashmi10/random-forest-from-scratch-in-python-238d91580841) among other
 regression models explored for predicting wait times.
 
-**PATIENT WAIT TIMES PREDICTION** is currently under development. If you notice any bugs, have any questions or suggestions, I'd love
+**PATIENT WAIT TIMES PREDICTION** is currently under development. If you notice any bugs, have any questions or
+suggestions, I'd love
 to hear from you: [nadhem.benameur@enis.tn](nadhem.benameur@enis.tn?subject=Feedback_on_Patient_Wait_times_prediction).
 
 
@@ -61,10 +62,33 @@ to hear from you: [nadhem.benameur@enis.tn](nadhem.benameur@enis.tn?subject=Feed
 <!-- - Altair -- plotting
 - Folium -- plotting -->
 
-
-
 ### Possible Future Enhancements ###
 
 * Implement web interface to inspect patient flow and waiting times in real time
 * Actively scrape hospital data
 * Generate best route to hospital using combinatorial optimization and Google API to read your location
+
+## Quick start
+
+> UNZIP the sources or clone the private repository. After getting the code, open a terminal and navigate to the working
+> directory, with product source code.
+
+```bash
+$ # Get the code
+$ git clone https://github.com/nadhembenameur99/CHIC-ED-patients-waiting-times-prediction.git
+$ cd CHIC-ED-patients-waiting-times-prediction
+$
+$ # Virtualenv modules installation (Unix based systems)
+$ virtualenv env
+$ source env/bin/activate
+$
+$ # Virtualenv modules installation (Windows based systems)
+$ # virtualenv env
+$ # .\env\Scripts\activate
+$
+$ # Install modules
+$ pip3 install -r requirements.txt
+$ or (if you are using anaconda)
+$ conda install -r requirements.txt
+
+```
